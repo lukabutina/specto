@@ -4,14 +4,17 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
+
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
+
 hr {
   display: block;
   height: 1px;
@@ -20,6 +23,7 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
 audio,
 canvas,
 iframe,
@@ -28,20 +32,25 @@ svg,
 video {
   vertical-align: middle;
 }
+
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
+
 textarea {
   resize: vertical;
 }
+
 .hidden {
   display: none !important;
 }
+
 .invisible {
   visibility: hidden;
 }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -49,25 +58,31 @@ textarea {
   display: table;
   /* 2 */
 }
+
 .clearfix:after {
   clear: both;
 }
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
+
 .main-wrapper {
   display: flex;
   flex-direction: row;
-}
-.main-wrapper .left-wrapper,
-.main-wrapper .right-wrapper {
-  width: 100%;
-  background-color: #444;
-  height: 100px;
-}
-.main-wrapper .left-wrapper {
-  max-width: 569px;
-}
-.main-wrapper .right-wrapper {
-  max-width: 500px;
+
+  .left-wrapper,
+  .right-wrapper {
+    width: 100%;
+    background-color: #444;
+    height: 100px;
+  }
+
+  .left-wrapper {
+    max-width: 569px;
+  }
+
+  .right-wrapper {
+    max-width: 500px;
+  }
 }
