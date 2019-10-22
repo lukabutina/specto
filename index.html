@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Naloga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/normalize.css" />
@@ -10,36 +10,49 @@
   </head>
 
   <body>
-      <form action="">
+      <form enctype="multipart/form-data" method="get" class="contactForm" id="contactForm">>
         <div class="main-wrapper">
           <h1 class="pink">Schreiben sie uns eine nachricht</h1>
           <div class="inner-wrapper">
               <div class="left-wrapper">
-                  <label for="content">Ich interessiere mich für ...</label>
-                  <textarea name="content"></textarea>
-                  <label for="content"><span class="pink">*</span> Required field</label>
+                  <span class="strong spacing">Ich interessiere mich für ...</span>
+                  <textarea name="content" id="content"></textarea>
+                  <label for="content"><span class="pink">*</span> <span class="text">Required field</span></label>
                 </div>
                 <div class="right-wrapper">
                   <div class="section">
-                    <span class="strong">Anrede</span>
-                      <input type="radio" name="anrede" value="frau"> Frau
-                      <input type="radio" name="anrede" value="herr"> Herr
-                      <input type="radio" name="anrede" value="keine"> Keine Angabe
+                    <span class="strong spacing">Anrede</span>
+                    <div class="input-holder">
+                      <label class="container strong">Frau
+                          <input type="radio" checked="checked" name="anrede" value="frau">
+                          <span class="checkmark"></span>
+                        </label>
+  
+                        <label class="container strong">Frau
+                          <input type="radio" checked="checked" name="anrede" value="frau">
+                          <span class="checkmark"></span>
+                        </label>
+  
+                        <label class="container strong">Keine Angabe
+                          <input type="radio" checked="checked" name="anrede" value="keine">
+                          <span class="checkmark"></span>
+                        </label>
+                    </div>
                   </div>
                   <div class="section">
-                    <span class="strong">Ihr Name</span>
-                    <input type="text" name="name">
-                    <label for="name"><span class="pink">*</span> Required field</label>
+                    <span class="strong spacing">Ihr Name</span>
+                    <textarea name="name" id="name"></textarea>
+                    <label for="name"><span class="pink">*</span> <span class="text">Required field</span></label>
                   </div>
                   <div class="section">
-                      <span class="strong">Ihr E-Mail-Adresse</span>
-                      <input type="text" name="email">
-                      <label for="email"><span class="pink">*</span> Required field</label>
+                      <span class="strong spacing">Ihr E-Mail-Adresse</span>
+                      <textarea name="email" id="email"></textarea>
+                      <label for="email"><span class="pink">*</span> <span class="text">Required field</span></label>
                     </div>
                 </div>
           </div>
           <div class="button-wrapper">
-            <button>SEND <span>></span></button>
+            <button id="submit-form"><span class="text">SEND</span> <span>></span></button>
           </div>
 
       </form>
@@ -57,6 +70,8 @@
           '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
         );
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="js/form-validation.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
   </body>
