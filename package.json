@@ -1,0 +1,25 @@
+{
+  "name": "specto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "onchange 'sass/**/*.scss' -- npm run compile",
+    "compile": "node-sass sass/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukabutina/specto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukabutina/specto/issues"
+  },
+  "homepage": "https://github.com/lukabutina/specto#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "onchange": "^6.1.0"
+  }
+}

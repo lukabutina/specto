@@ -10,9 +10,39 @@
   </head>
 
   <body>
-    <div class="main-wrapper">
-      <div class="left-wrapper"></div>
-      <div class="right-wrapper"></div>
+      <form action="">
+        <div class="main-wrapper">
+          <h1 class="pink">Schreiben sie uns eine nachricht</h1>
+          <div class="inner-wrapper">
+              <div class="left-wrapper">
+                  <label for="content">Ich interessiere mich für ...</label>
+                  <textarea name="content"></textarea>
+                  <label for="content"><span class="pink">*</span> Required field</label>
+                </div>
+                <div class="right-wrapper">
+                  <div class="section">
+                    <span class="strong">Anrede</span>
+                      <input type="radio" name="anrede" value="frau"> Frau
+                      <input type="radio" name="anrede" value="herr"> Herr
+                      <input type="radio" name="anrede" value="keine"> Keine Angabe
+                  </div>
+                  <div class="section">
+                    <span class="strong">Ihr Name</span>
+                    <input type="text" name="name">
+                    <label for="name"><span class="pink">*</span> Required field</label>
+                  </div>
+                  <div class="section">
+                      <span class="strong">Ihr E-Mail-Adresse</span>
+                      <input type="text" name="email">
+                      <label for="email"><span class="pink">*</span> Required field</label>
+                    </div>
+                </div>
+          </div>
+          <div class="button-wrapper">
+            <button>SEND <span>></span></button>
+          </div>
+
+      </form>
     </div>
 
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>

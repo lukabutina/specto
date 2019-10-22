@@ -1,73 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 html {
   color: #222;
   background-color: #f0ece9;
   font-size: 1em;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
+
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
+
 ::selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
+
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
+
 audio,
 canvas,
 iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
+
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
+
 .hidden {
-  display: none !important;
-}
+  display: none !important; }
+
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
+
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
+
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+  /* Style adjustments for viewports that meet the condition */ }
+
 .main-wrapper {
   display: flex;
-  flex-direction: row;
-}
-.main-wrapper .left-wrapper,
-.main-wrapper .right-wrapper {
-  width: 100%;
-  background-color: #444;
-  height: 100px;
-}
-.main-wrapper .left-wrapper {
-  max-width: 569px;
-}
-.main-wrapper .right-wrapper {
-  max-width: 500px;
-}
+  flex-direction: column;
+  max-width: 1069px;
+  margin: 0 auto; }
+  .main-wrapper .inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; }
+    .main-wrapper .inner-wrapper .left-wrapper {
+      border-right: 1px solid #ded9d6; }
+    .main-wrapper .inner-wrapper .left-wrapper,
+    .main-wrapper .inner-wrapper .right-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 58px; }
+  .main-wrapper h1 {
+    text-transform: uppercase;
+    max-width: 346px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    letter-spacing: 4px;
+    position: relative;
+    padding-bottom: 24px; }
+    .main-wrapper h1::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: #AE006F;
+      position: absolute;
+      left: 0px;
+      bottom: 0px; }
+  .main-wrapper .button-wrapper {
+    text-align: right;
+    padding: 0px 58px; }
+
+.pink {
+  color: #AE006F; }
