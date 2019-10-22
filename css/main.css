@@ -111,6 +111,12 @@ textarea {
 .clearfix:after {
   clear: both; }
 
+.nopadding {
+  padding: 0; }
+
+.nomargin {
+  margin: 0; }
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
