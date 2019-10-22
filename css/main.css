@@ -177,7 +177,8 @@ textarea {
       background-color: #b40064;
       color: #FFF;
       padding: 23px 31px;
-      position: relative; }
+      position: relative;
+      letter-spacing: 2px; }
       .main-wrapper .button-wrapper button span.text {
         margin-right: 55px; }
       .main-wrapper .button-wrapper button span:not(.text) {
@@ -189,7 +190,6 @@ textarea {
 .pink {
   color: #AE006F; }
 
-/* The container */
 .container {
   display: inline-block;
   position: relative;
@@ -201,13 +201,11 @@ textarea {
   -ms-user-select: none;
   user-select: none; }
 
-/* Hide the browser's default radio button */
 .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer; }
 
-/* Create a custom radio button */
 .checkmark {
   position: absolute;
   top: 0;
@@ -218,28 +216,23 @@ textarea {
   border-radius: 50%;
   border: 1px solid #cac6c3; }
 
-/* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc; }
 
-/* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #2196F3; }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none; }
 
-/* Show the indicator (dot/circle) when checked */
 .container input:checked ~ .checkmark {
   background: initial; }
 
 .container input:checked ~ .checkmark:after {
   background: #AE006F; }
 
-/* Style the indicator (dot/circle) */
 .container .checkmark:after {
   display: block;
   top: 5px;
