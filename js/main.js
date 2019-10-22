@@ -17,5 +17,4 @@ document.getElementById("submit-form").addEventListener("click", function(event)
     if(validator.form()) {
         console.log($( "#contactForm" ).serializeArray());
     }
-    
 });
